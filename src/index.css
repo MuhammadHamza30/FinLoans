@@ -1,0 +1,358 @@
+#root {
+  max-width: 1280px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5rem;
+}
+
+.navbar a {
+  color: white;
+}
+
+.navbar a,
+button {
+  font-size: 14px;
+}
+
+.navbar ul a:hover {
+  color: #33d4d6;
+}
+
+.navbar-nav .dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+  animation: fadeUp 0.4s;
+}
+
+
+/* Ensure dropdown menu visibility on hover */
+.navbar-nav .dropdown:hover .dropdown-menu {
+  display: block;
+  border-radius: 0;
+  opacity: 1;
+  transform: translateY(0);
+  /* Move to original position */
+  visibility: visible;
+}
+
+/* Keyframes for fade-up animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+    /* Start slightly below */
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    /* End at original position */
+  }
+}
+
+/* Ensure the dropdown label remains visible */
+.navbar-nav .dropdown-toggle {
+  color: #fff;
+  /* Set to the desired text color */
+}
+
+.navbar-nav .dropdown:hover .dropdown-toggle {
+  color: #fff;
+  /* Ensure the color doesn't change on hover */
+}
+
+.navbar-toggler {
+  border-color: white;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  color: white;
+}
+
+.dropdown-menu a {
+  color: black;
+  font-size: 14px;
+}
+
+.navbar .btn {
+  color: #33D4D6;
+  border-color: #33D4D6;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.navbar .btn:hover {
+  color: white;
+  background-color: #33d4d6;
+}
+
+form a {
+  text-decoration: none;
+}
+
+
+.MdCall {
+  color: #33d4d6;
+}
+
+.footer {
+  inline-size: 1;
+}
+
+.footer div li {
+  line-height: 2rem;
+  list-style: none;
+
+}
+
+.iconslist li a {
+  border: 1px solid #7a838b30;
+  color: #7a838b30;
+  border-radius: 50%;
+  padding: 15px;
+}
+
+.iconslist li a:hover {
+  border-color: #0A8CFF;
+  background-color: #0A8CFF;
+  color: white;
+}
+
+.iconslist li {
+  padding-right: 8px;
+}
+
+.footer div li a {
+  text-decoration: none;
+  color: #7a838b;
+  font-size: 13px;
+}
+
+.footer p {
+  font-size: 13px;
+  color: #7a838b;
+}
+
+.footer h1 {
+  font-size: 18px;
+  padding-bottom: 20px;
+  align-items: center;
+}
+
+.footer .S1 {
+  padding-top: 145px;
+  padding-bottom: 129px;
+}
+
+.footer .S2 {
+  font-size: 15px;
+  color: #7a838b;
+}
+
+.S2 a {
+  text-decoration: none;
+}
+
+.Subscribe input {
+  border: none;
+}
+
+.Subscribe form {
+  border: 1px solid #7a838b;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.Subscribe form button {
+  border: none;
+  border-radius: 5px;
+
+  background-color: #0A8CFF;
+  color: white;
+}
+
+.HowItWorks {
+  background-color: #F5FBFF;
+}
+
+.HowItWorks p {
+  color: #7a838b;
+}
+
+.HowItWorks .header {
+  padding-top: 20px;
+  justify-content: center;
+  text-align: center;
+}
+
+.HowItWorks .lineTag {
+  margin-left: auto;
+  margin-right: auto;
+  height: 4px;
+  width: 100px;
+  background-color: #33D4D6;
+  border-radius: 3px;
+}
+
+.HowItWorks .body span {
+  display: inline-block;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: #DDF0FF;
+  color: #0A8CFF;
+  text-align: center;
+  line-height: 72px;
+  font-size: 16px;
+  font-weight: 500;
+
+}
+
+/* Frequently Ask Component Css */
+
+.custom-accordion-button::after {
+  /* Move collapse icon to the left */
+  order: -1;
+  margin-right: 10px;
+  margin-left: 0;
+}
+
+.accordion-item {
+  /* Remove borders around accordion items */
+  border: none;
+}
+
+
+.custom-accordion-button {
+  /* Keep only the bottom border under accordion headers */
+  border: none;
+  border-bottom: 1px solid #ddd;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+
+.custom-accordion-button:not(.collapsed) {
+  /* Remove background and border when accordion is clicked (active state) */
+  background-color: transparent;
+  color: inherit;
+  box-shadow: none;
+  border: none;
+}
+
+.accordion-body {
+  /* Add a bottom border to accordion body when it's open */
+  border-bottom: 1px solid #ddd;
+  color: #7a838b;
+}
+
+.custom-accordion-button:focus {
+  /* Remove default focus outline */
+  box-shadow: none;
+}
+
+
+/* Content Carousel Component css */
+
+.carousel-inner {
+  /* Ensure the carousel has the necessary padding and alignment */
+  text-align: left;
+}
+
+.rounded-circle {
+  width: 15rem;
+  height: 15rem;
+  margin: 20px;
+
+}
+
+.carousel-item img {
+  /* Make the image circular and add margin for spacing */
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.quote-content {
+  /* Style the quote text */
+  padding-top: 2rem;
+  padding-left: 10px;
+}
+
+.quote-text {
+  font-size: 1rem;
+  color: #333;
+  margin: 0;
+}
+
+.quote-author {
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 5px;
+}
+
+.carousel-control-prev {
+  /* Customizing the carousel controls */
+  left: 63.2rem;
+  top: 56%;
+  width: 50px;
+  height: 50px;
+  background-color: #E6F3FF;
+  border-radius: 50%;
+}
+
+.carousel-control-next {
+  top: 30%;
+  right: 3.5rem;
+  width: 50px;
+  height: 50px;
+  background-color: #E6F3FF;
+  border-radius: 50%;
+}
+
+
+@media (max-width: 1200px) {
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none;
+  }
+}
+
+/* ApplyForLoan Component css */
+
+.ApplyForLoan_bg {
+  position: relative;
+  background-image: url('./assets/loan.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: auto;
+  width: 100%;
+  z-index: 1;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+
+.ApplyForLoan {
+  margin-top: 30vh;
+  margin-bottom: 20vh;
+}
+
+.ApplyForLoan h1 {
+  color: white;
+}
+
+.ApplyForLoan_bg::before {
+  position: absolute;
+  content: "";
+  background-color: #040E27;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: .5;
+}

@@ -41,7 +41,7 @@ function Home() {
             <div className="container">
               <Navbar />
               <div className="row headerR1">
-                <div className="col-lg-7 col-sm-12 pt-5">
+                <div className="col-lg-7 col-sm-12 pt-5 hoveringeffect">
                   <h1 className="pb-5" data-aos="fade-left">Get Loan for your Business growth or startup</h1>
                   <button type="button" data-aos="fade-right" className="System_btn">How It Works</button>
                 </div>

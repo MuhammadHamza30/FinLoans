@@ -356,7 +356,3 @@ form a {
   z-index: -1;
   opacity: .5;
 }
-
-.hoveringeffect:hover{
-  z-index: 2;
-}

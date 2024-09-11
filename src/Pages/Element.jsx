@@ -196,7 +196,7 @@ function Element() {
               </div>
             </div>
           </div>
-          <div className="section2 py-4 text-end">
+          <div className="section2 py-4">
             <h3 className="mb-30">Right Aligned</h3>
             <div className="row">
               <div className="col-md-9">

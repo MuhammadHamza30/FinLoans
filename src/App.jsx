@@ -16,6 +16,7 @@ function App() {
 
 return(
     <BrowserRouter>
+    <Headers/>
     <Routes>
       <Route index="/" element={<Home />} />
       <Route path="/About" element={<About />} />
